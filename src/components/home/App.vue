@@ -1,29 +1,28 @@
 <template>
-    <v-container>
-        <v-card tile elevation="0">
-            <v-card-text>
-                C#との通信を確認します<br />
-                <v-btn color="button" dark @click="callBackendMethods()">呼んでみる?</v-btn>
-                <v-divider class="my-5" />
-                Vue-Routerの動作を確認します<br />
-                <v-btn color="button" dark to="/honya">飛ぶ？</v-btn>
-            </v-card-text>
-        </v-card>
+    <v-container fluid class="mx-0">
+        <v-row dense>
+            <v-col cols="12" md="9">
+
+            </v-col>
+            <v-col cols="12" md="3">
+                <progress-widget />
+            </v-col>
+        </v-row>
+
     </v-container>
 </template>
 
 <script>
+import ProgressWidget from '@components/home/widgets/Progress.vue';
+
 
 export default {
-    data() {
-        return [
-        ]
+    components: {
+        ProgressWidget,
     },
-    methods: {
-        async callBackendMethods() {
-            const bridge = window.chrome.webview.hostObjects.bridge;
-            await bridge.MsgBox("引数だよぉ");
-        },
+    data() {
+        return {
+        }
     },
 }
 </script>

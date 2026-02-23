@@ -8,7 +8,8 @@ export default [
         component: Home,
         meta: {
             title: "Home"
-        }
+        },
+        icon: "mdi-view-dashboard"
     },
 
     // URL異常(404)
@@ -18,6 +19,7 @@ export default [
         component: () => import("@components/Error/NotFound.vue"),
         meta: {
             title: "Error - HTTP 404 Not Found"
-        }
+        },
+        showNav: false
     }
 ]

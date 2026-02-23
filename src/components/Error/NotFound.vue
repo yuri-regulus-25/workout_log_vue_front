@@ -4,7 +4,7 @@
             <v-card-text>
                 <v-icon color="error" large class="mr-3">mdi-alert-circle</v-icon>
                 <span>URL不正です。URLを見直してください。</span><br />
-                <v-btn color="button" dark to="/" class="mt-5">ホームへ</v-btn>
+                <v-btn color="primary" dark to="/" class="mt-5">ホームへ</v-btn>
             </v-card-text>
         </v-card>
     </v-container>
