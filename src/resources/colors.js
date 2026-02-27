@@ -1,4 +1,4 @@
 export const commonColors = {
-    header: "#132A3A",
-    button: "#014421"
+  primary: "#07480b",
+  secondary: "#2B5284"
 };
