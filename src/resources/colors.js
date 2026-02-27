@@ -1,4 +1,4 @@
 export const commonColors = {
-  primary: "#07480b",
+  primary: "#427cc7",
   secondary: "#2B5284"
 };

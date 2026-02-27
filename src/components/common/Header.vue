@@ -23,9 +23,9 @@
 export default {
   props: {
     title: {
-      Type: String,
+      type: String,
       default: null,
-      require: true
+      required: true
     }
   },
   methods: {

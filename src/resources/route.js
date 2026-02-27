@@ -5,9 +5,21 @@ export default [
     name: "dashboard",
     component: () => import("@components/dashboard/App.vue"),
     meta: {
-      title: "ダッシュボード"
+      title: "ダッシュボード",
+      breadcrumb: ["dashboard"]
     },
     icon: "mdi-view-dashboard"
+  },
+
+  {
+    path: "/workout/edit/:date",
+    name: "workout_edit",
+    component: () => import("@components/workout/edit/App.vue"),
+    meta: {
+      title: "登録",
+      breadcrumb: ["dashboard", "workout", "workout_edit"]
+    },
+    icon: "mdi-plus"
   },
 
   // URL異常(404)

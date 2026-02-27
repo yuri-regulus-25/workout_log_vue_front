@@ -65,6 +65,10 @@
             <v-icon>mdi-close</v-icon>
           </v-btn>
           <v-toolbar-title>{{ selectedDateDisplay }} の記録</v-toolbar-title>
+          <v-spacer />
+          <v-btn icon @click="$emit('edit-date', selectedDate)">
+            <v-icon>mdi-pencil</v-icon>
+          </v-btn>
         </v-toolbar>
 
         <v-container>
